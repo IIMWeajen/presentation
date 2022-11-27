@@ -1,0 +1,45 @@
+/* section 3 photoshop */
+
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: darkslategrey;
+    padding: 20px;
+    justify-content: space-around;
+    color:aliceblue;
+    align-items: center;
+}
+
+#image_bowie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image_bowie > img{
+    transition:0.5s;
+}
+
+#image_bowie > img:hover{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.555);
+    transition:0.5s;
+}
+
+@media screen and (max-width:800px) {
+    .grid{
+        display:grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #image_bowie > img{
+        padding: 10px;
+        transition:0.5s;
+    }
+    
+    #image_bowie > img:hover{
+        width:60%;
+        transition:0.5s;
+    }
+}

@@ -1,0 +1,34 @@
+.ban{
+    object-fit:cover;
+}
+
+main{
+    display:flex;
+    flex-flow: wrap;
+    justify-content:space-around;
+    text-decoration: none;
+    animation:fade 1.5s;
+}
+main > div{
+    margin:10vh;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color:darkslategray;
+}
+
+a:hover{
+    color:rgba(25, 42, 42)
+}
+
+@keyframes fade{
+    0%{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    50%{
+        opacity:0;
+    }
+}

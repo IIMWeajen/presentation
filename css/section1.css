@@ -1,0 +1,43 @@
+/* section 1 3D */
+
+#scène_3d{
+    display:flex;
+    background-color: darkslategrey;
+    padding: 20px;
+    justify-content: space-around;
+    color:aliceblue;
+    align-items: center;
+}
+
+#scène_3d > div{
+    margin:20px;
+}
+
+#scène_3d > img{
+    transition:0.5s;
+    animation: fade 1s;
+    animation-timeline: scroll;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+}
+
+#scène_3d > img:hover{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.555);
+    transition:0.5s;
+}
+
+@media screen and (max-width:800px) {
+    #scène_3d{
+        display:flex;
+        flex-direction:column;
+    }
+
+    #scène_3d > img{
+        width:100%;
+    }
+    
+}

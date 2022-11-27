@@ -1,0 +1,19 @@
+/* ça marche pas avec bootstrap :( */
+
+main > div > a{
+    color:darkslategray;
+    text-decoration: none;
+}
+
+.col-12 > a {
+    color:darkslategray;
+    text-decoration: none;
+}
+
+main > div > a:hover{
+    color:darkcyan;
+}
+
+.col-12 > a:hover{
+    color:darkcyan;
+}
